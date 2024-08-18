@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravinth Portfolio</title>
+</head>
+<style>
+    body {
+        font-family: Arial,sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 2rem 0;
+        position: relative;
+    }
+    .header-content h1{
+        font-size: 2.5rem;
+    }
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 25px;
+        left: 100px;
+        float: left;
+    }
+    nav {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1px;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0 20px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .section-content {
+        background-color: #fff;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .download-button {
+        background-color: #333;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border-radius: 20px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .download-button:hover {
+        background-color: blue;
+    }
+    footer {
+        text-align: center;
+        padding: 1rem 0;
+        background-color: #333;
+        color: #fff;
+    }
+</style>
+<body>
+    <main>
+            <header>
+                <div class="header-content">
+                <img src="Aravinth.jpg" alt="your profile picture" class="profile-picture">
+    
+                <h1>ARAVINTH S</h1>
+                <p>BCA Graduate</p>
+                </div>
+            </header>
+            <br>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+        <section id="about">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p>Hello Everyone! I am Aravinth! a dedicated graduate with a Bachelor's degree in Computer Applications from SRM Trichy Arts and Science College, affiliated with Bharathidasan University, Trichy. As a beginner in the world of technology, I have developed foundational skills in coding languages such as C, C++, Java, MySQL, PHP, HTML, and CSS. I am passionate about learning and eager to explore opportunities within the IT industry, particularly in the developer field.</p>
+            </div>
+        </section>
+    
+        <section id="education">
+            <div class="section-content"> 
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Degree</strong></li>
+                <br>
+                <ul>
+                    <li>Bachelor of Computer Application</li>
+                    <li>SRM Trichy Arts and Science College, Trichy</li>
+                    <li>Passed Out Year: 2024</li>
+                </ul>
+            </ul>
+            </div>
+        </section>
+    
+        <section id="skills">
+            <div class="section-content"> 
+            <h2>Skills</h2>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+            </div>
+        </section>
+    
+        <section id="resume">
+            <center>
+                <div class="section-content">
+                    <h2>Resume</h2>
+                    <a href="Videos/RESUME.pdf" class="download-button">Download CV</a>
+                </div>
+            </center>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 Aravinth S</p>
+            <P>Ph: 8248954425</P>
+            <p>Email: aravinthofficial01@gmail.com</p>
+        </footer>
+    
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click',function(e){
+                    e.preventDefault();
+    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+    
+                    if(targetElement){
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        </script>
+
+    </main>
+</body>
+</html>
